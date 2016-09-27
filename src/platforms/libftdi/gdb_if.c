@@ -24,6 +24,7 @@
  */
 #include <stdio.h>
 
+<<<<<<< HEAD
 #ifndef WIN32
 #   include <sys/socket.h>
 #   include <netinet/in.h>
@@ -33,6 +34,16 @@
 #   include <winsock2.h>
 #   include <windows.h>
 #   include <ws2tcpip.h>
+#elif defined LWIP
+#   include "lwip/err.h"
+#   include "lwip/sockets.h"
+#   include "lwip/sys.h"
+#   include "lwip/netdb.h"
+#   include "lwip/dns.h"
+#else
+#   include <sys/socket.h>
+#   include <netinet/in.h>
+#   include <sys/select.h>
 #endif
 
 #include <assert.h>
