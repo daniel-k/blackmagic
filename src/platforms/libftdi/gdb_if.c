@@ -24,7 +24,6 @@
  */
 #include <stdio.h>
 
-<<<<<<< HEAD
 #ifndef WIN32
 #   include <sys/socket.h>
 #   include <netinet/in.h>
@@ -119,6 +118,7 @@ unsigned char gdb_if_getchar_to(int timeout)
 
 	return -1;
 }
+
 
 void gdb_if_putchar(unsigned char c, int flush)
 {
