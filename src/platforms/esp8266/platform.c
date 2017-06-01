@@ -155,5 +155,5 @@ void user_init(void)
 	dhcpserver_start(&first_client_ip, 4);
 
 #endif
-	xTaskCreate(&main_task, (signed char *)"main", 4*256, NULL, 2, NULL);
+	xTaskCreate(&main_task, "main", 4*256, NULL, 2, NULL);
 }
